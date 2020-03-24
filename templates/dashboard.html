@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutUs</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/about.css') }}">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <style>
+    button {
+      padding: 10px 10px;
+      background: linear-gradient(blue, white);
+      color: white;
+      cursor: pointer;
+    }
+
+    .heading {
+      width: 80%;
+      margin: 10px auto;
+      text-align: left;
+
+    }
+
+    table {
+      width: 80%;
+      margin: 10px auto;
+      border: 2px solid;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    .btn{
+      display:inline-block; 
+      width: 80%;
+      margin-left: 135px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="nav-menu">
+      <a href="/" class="active">Home</a>
+      <a href="/login">Login/Register</a>
+      <a href="/faculty">Faculty</a>
+      <a href="/academics">Academics</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+  <div class="background-img">
+    <!-- <img src="{{url_for('static',filename='img/about-bg.jpg')}}" alt=""> -->
+    <h1>Admin Panel</h1>
+    <p>Manage your posts and save them</p>
+  </div>
+
+  <h1 class="heading">Basic Actions</h1>
+  <div class="btn">
+  <a href="/edit/0"> <button>Add a new post </button></a>
+  <a href="/logout"> <button>Logout </button></a>
+</div>
+  <hr>
+  <h1 class="heading button">Upload a file</h1>
+  <form class="heading" action="/uploader" method="post" enctype="multipart/form-data">
+    <input type="file" name="file1" id="file1">
+    <button type="submit">submit</button>
+  </form>
+  <hr>
+  <h1 class="heading">Edit Posts</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sno</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for post in posts%}
+      <tr>
+        <td>{{post.sno}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.date}}</td>
+        <td> <a href="/edit/{{post.sno}}"><button style="padding: 10px 15px;"> Edit</button></a></td>
+        <td> <a href="/delete/{{post.sno}}"><button>Delete</button> </a></td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <hr>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="{{params['twi_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/twitter.png') }}"
+          alt="error loading"></a>
+      <a href="{{params['fb_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/facebook.png') }}"
+          alt="error loading">
+        <a href="{{params['ins_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/instagram.png') }}"
+            alt="error loading"></a> </div>
+    <div class="copy">
+      Copyright &copy; BSc (CS) and BCA Department 2020
+    </div>
+  </footer>
+</body>
+
+</html>

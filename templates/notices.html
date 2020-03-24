@@ -1,0 +1,32 @@
+{% extends "post_layout.html" %}
+{% block body %}
+<div class="background-img">
+    <h1>Notices</h1>
+    <p>Get updated</p>
+</div>
+
+
+{% for post in post %}
+
+<div class="info">
+    <div class="info-style">
+        <a href="/post/{{post.slug}}"><h2 class="post-title">{{post.title}}<h2>
+            <h3 class="post-subtitle">{{post.tagline}} </h3>
+        </a>
+        <p>Posted by <a href="#">Admin</a> on {{post.date}}</p>
+    </div>
+    <!-- {{post.content[0:13]}}.... -->
+</div>
+<hr>
+{% endfor %}
+<div style="width: 80%;margin: 1px auto;">
+    <a href="{{prev}}"><button style="padding: 15px 15px;
+        background: linear-gradient(blue, white);
+        color: white;
+        cursor: pointer;"> &larr; Previous</button></a>
+    <a href="{{next}}"><button style="padding: 15px 29px;
+        background: linear-gradient(blue, white);
+        color: white;
+        cursor: pointer;float:right">Next &rarr;</button></a>
+</div>
+{% endblock %}

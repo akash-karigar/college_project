@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/userpage.css') }}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="#Results">Results</a>
+            <a href="#Notices">Notices</a>
+            <a href="#Forum">Forum</a>
+            <a href="#Notes">Notes</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="background" id="Results">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+        <section>
+            <a href="/results">
+                <h1>Results</h1>
+            </a>
+        </section>
+        <div class="background1" id="Notices">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+        <section>
+            <a href="/notices">
+                <h1>Notices</h1>
+            </a>
+        </section>
+
+        <div class="background2" id="Forum">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+        <section>
+            <a href="/forum">
+                <h1>Forum</h1>
+            </a>
+
+        </section>
+        <div class="background3" id="Notes">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+
+        <section>
+            <a href="/notes">
+                <h1>Notes</h1>
+            </a>
+        </section>
+    </div>

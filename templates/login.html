@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+
+<body>
+    {% include "includes/_messages.html" %}
+
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="/" class="active">Home</a>
+            <a href="/login">Login/Register</a>
+            <a href="/faculty">Faculty</a>
+            <a href="/academics">Academics</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            <form action="/login"  method="POST">
+                <input type="text" id="username" name="username" value="{{request.form.username}}" placeholder="User Name" required>
+                <input type="password"  id="password" name="password" value="{{request.form.password_candidate}}" placeholder="Enter Password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+           
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social-icons">
+            <img src="{{url_for('static',filename='img/twitter.png')}}" alt="">
+            <img src="{{url_for('static',filename='img/facebook.png')}}" alt="">
+            <img src="{{url_for('static',filename='img/instagram.png')}}" alt="">
+        </div>
+        <div class="copy">
+            Copyright &copy; BSc (CS) and BCA Department 2020
+        </div>
+    </footer>    
+
+
+</body>
+</html>

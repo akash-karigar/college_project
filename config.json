@@ -1,0 +1,20 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/department",
+    "prod_url": "mysql://username:password@localhost/department",
+    "fb_url": "https://facebook.com/department",
+    "twi_url": "https://twitter.com/department",
+    "ins_url": "https://instagram.com/department",
+    "gmail-user": "enter ur email here",
+    "gmail-password": "enter ur password here",
+    "admin_user": "akash",
+    "admin_password": "akash",
+    "about_text": "Karnatak Science College, Dharwad, is an Institute in the North Karnataka region of India. The Karnatak Science College is the Constituent Science College of Karnatak University Dharwad[1] and offers basic and applied courses in science, both at the undergraduate and the pre-university level.\n\nThe Karnatak Science College, Dharwad, was originally part of the Karnatak College Dharwad (KCD), which was established in 1917, by the then-Government of Bombay. The Karnatak College was established from the painstaking efforts of Diwan Bahaddur S K Rodda (CIE), Rao Bahaddur R C Artal, Sir Siddappa T Kambli. Diwan Bahaddur S K Rodda, a member of the Bombay Legislative Council on behalf of Southern Division, for three terms, undertook a vigorous campaign to collect two lakh of Rupees for the foundation of Karnatak College. Rao Bahaddur R C Artal, one of the founders of the Lingayat Education Association, Dharwad, collected one hundred thousand of rupees toward the establishment of the Karnatak College. Sir Siddappa T Kambli, Minister of Education, Government of Bombay, was deeply involved in improving the education facilities in North Karnataka. He was responsible for the transfer of materials, apparatus, equipment and library books from the closed Deccan College, Poona, to the Karnatak College, Dharwad. The staff, students and alumni of Karnatak College (Arts & Science) remember the efforts made by these pioneers by celebrating Founder's day every year.",
+    "no_of_posts": 2,
+    "upload_location":"F:\\Final year project\\static"
+
+
+  }
+}

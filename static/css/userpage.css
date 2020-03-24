@@ -1,0 +1,89 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    height: 8vh;
+    /* padding: 10px ; */
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav-menu a{
+    padding:5px 20px ;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px ;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.5),white) ;
+}
+.nav-menu a:hover{
+    background-color: #e44436;
+    color:black;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+/* .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 500px;
+    width: 100%;
+    background: url(/static/img/bg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    
+}
+.background1{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    background: url(/static/img/bg1.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    
+}
+.background2{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    background: url(/static/img/bg2.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    
+}
+.background3{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: url(/static/img/about-bg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    
+}

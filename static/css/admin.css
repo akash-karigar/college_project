@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,white);
+}
+
+.container form{
+    border: 1px solid;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+input{
+    padding:15px 5px;
+    padding-right: 10px;
+    margin: 5px 0;
+    background: linear-gradient(white,gray);
+    
+
+}
+
+button{
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: linear-gradient(white,gray);
+    border-radius: 30px;
+}

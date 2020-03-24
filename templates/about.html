@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/about.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="/" class="active">Home</a>
+            <a href="/login">Login/Register</a>
+            <a href="/faculty">Faculty</a>
+            <a href="/academics">Academics</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="background-img">
+        <!-- <img src="{{url_for('static',filename='img/about-bg.jpg')}}" alt=""> -->
+        <h1>About Us</h1>
+        <p>This is what we do</p>
+    </div>
+
+    <div class="info">
+        <div class="info-style">
+            <p>{{params['about_text']}}
+            </p>
+            
+        </div>
+    </div>
+    <hr>
+<footer class="footer">
+    <div class="social-icons">
+        <a href="{{params['twi_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/twitter.png') }}" alt="error loading"></a>
+        <a href="{{params['fb_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/facebook.png') }}" alt="error loading">
+        <a href="{{params['ins_url']}}"
+        target="_blank"><img src="{{ url_for('static',filename='img/instagram.png') }}" alt="error loading"></a>    </div>
+    <div class="copy">
+        Copyright &copy; BSc (CS) and BCA Department 2020
+    </div>
+</footer>
+</body>
+</html>

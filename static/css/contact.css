@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar{
+    height: 8vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-menu a{
+    color: white;
+    padding:5px 20px ;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu a:hover{
+    background-color: #e44436;
+    color:black;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+
+.bg-info{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.bg-info::before{
+    content: '';
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/static/img/contact-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+section{
+    width: 70%;
+    margin: 2px auto;
+}
+
+section p{
+    font-size: 30px;
+    text-align: left;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.item{
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 175, 192);
+    outline: none;
+}
+
+
+.send-btn{
+    margin-top: 20px;
+    width: 15%;
+    padding: 10px 0;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+
+hr{
+    margin: 30px 0;
+}
+
+
+
+.footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.social-icons{
+    margin-bottom: 15px;
+}
+
+.social-icons img{
+    margin: 7px 10px;
+    cursor: pointer;
+    height: 45px;
+    filter: invert();
+    
+}
+
+.copy{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}

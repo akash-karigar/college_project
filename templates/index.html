@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Website</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <div class="banner">
+        <img src="{{ url_for('static',filename='img/banner.jpg') }}" alt="error loading">
+        <h1>BSc(CS) and BCA Department</h1>
+    </div>
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="/" class="active">Home</a>
+            <a href="/dashboard">Admin</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/faculty">Faculty</a>
+            <a href="/academics">Academics</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="backgroud-img" style="background: url('img/bg.jpg');">
+        <div class="bg-text">
+            <h1>Welcome to BSc (CS) and BCA Department</h1>
+        </div>
+    </div>
+    <section class="white-section">
+            <div class="bsc-info">
+                <h1 class="h-primary">BSc (CS)</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil tempore, rerum dolores cupiditate
+                    facilis architecto delectus in veniam eligendi debitis quae fuga error placeat non exercitationem
+                    laboriosam dolorum vitae nulla. Quos qui voluptas corrupti, veniam ipsa autem ipsam ullam officia
+                    harum facilis est fugit et magnam blanditiis facere minima dolorem, dolores praesentium esse nihil
+                    quam? Eos maxime praesentium qui, hic sit voluptatibus nisi numquam ea et? Cum nobis aliquam sed
+                    laudantium voluptas, nulla fuga ducimus sit, quia tempora facere voluptatum optio dolorum rem, omnis
+                    iste! Aut amet,
+                </p>
+            </div>
+    </section>
+    <div class="background-img2">
+        <div class="bg-text">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aspernatur?</h1>
+        </div>
+    </div>
+    <section class="white-section">
+        <div class="bca-info">
+            <h1 class="h-primary">BCA</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ex aut nostrum laudantium vero nobis
+                vel quaerat pariatur neque nam dolor animi. Sunt sint consequatur optio ipsam, asperiores non
+                incidunt eos suscipit, consectetur cupiditate nobis fugiat facere, autem ex odit nemo dignissimos ad
+                quos beatae porro! Reiciendis dolore sint voluptas, veritatis ratione, quibusdam ipsum modi harum ex
+                nihil qui quo placeat quas eos, nam dolorem adipisci sit repellendus molestias aut? Aperiam, neque
+                ab excepturi necessitatibus autem eius ipsam dolorem. Quasi consectetur, perspiciatis iusto
+                voluptatum blanditiis nam repellendus id excepturi praesentium, veniam a distinctio assumenda, dicta.
+            </p>
+        </div>
+
+    </section>
+
+    
+<hr>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="{{params['twi_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/twitter.png') }}" alt="error loading"></a>
+            <a href="{{params['fb_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/facebook.png') }}" alt="error loading">
+            <a href="{{params['ins_url']}}"
+            target="_blank"><img src="{{ url_for('static',filename='img/instagram.png') }}" alt="error loading"></a>
+        </div>
+        <div class="copy">
+            Copyright &copy; BSc (CS) and BCA Department 2020
+        </div>
+    </footer>
+</body>
+
+</html>

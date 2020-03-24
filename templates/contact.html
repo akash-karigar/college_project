@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/contact.css')}}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-menu">
+            <a href="/" class="active">Home</a>
+            <a href="/login">Login/Register</a>
+            <a href="/faculty">Faculty</a>
+            <a href="/academics">Academics</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="bg-info">
+        <h1>Contact Us</h1>
+        <p>Have questions? We have answers</p>
+    </div>
+
+
+    <section>
+        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as
+            possible!</p>
+
+        <form action="/contact" class="box" method="POST">
+            <!-- <label for="">Name</label> -->
+            <input class="item" type="text" id="name" name="name" placeholder="Name">
+            <!-- <label for="">Email</label> -->
+            <input class="item" type="email" name="email" id="email" placeholder="Email Address">
+            <!-- <label for="">Phone no</label> -->
+            <input class="item" type="tel" name="phone" id="phone" placeholder="Phone Number">
+            <!-- <label for="">Message</label> -->
+            <textarea class="item" name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="btn">
+                <button class="send-btn">send</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="{{params['twi_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/twitter.png') }}" alt="error loading"></a>
+            <a href="{{params['fb_url']}}" target="_blank"><img src="{{ url_for('static',filename='img/facebook.png') }}" alt="error loading">
+            <a href="{{params['ins_url']}}"
+            target="_blank"><img src="{{ url_for('static',filename='img/instagram.png') }}" alt="error loading"></a>        </div>
+        <div class="copy">
+            Copyright &copy; BSc (CS) and BCA Department 2020
+        </div>
+    </footer>
+    
+</body>
+
+</html>

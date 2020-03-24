@@ -1,0 +1,17 @@
+{%  extends "post_layout.html" %}
+
+    {% block body %}
+    <div class="background-img">
+        <h1>{{post.title}}</h1>
+        <h2 style="font-weight: 100;">{{post.tagline}}</h2>
+        <p style="line-height: 2;">Posted by <a href="#" style="color: white;">Admin</a> on {{post.date}}</p>
+    </div>
+
+    <div class="info">
+        <div class="info-style">
+            <p>{{ post.content }}</p>
+        </div>
+            
+        </div>
+    </div>
+    {% endblock %}
